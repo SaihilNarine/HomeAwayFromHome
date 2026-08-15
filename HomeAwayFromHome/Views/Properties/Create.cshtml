@@ -1,0 +1,90 @@
+@model HomeAwayFromHome.Models.Property
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Property</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="PropertyName" class="control-label"></label>
+                <input asp-for="PropertyName" class="form-control" />
+                <span asp-validation-for="PropertyName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MaximumGuests" class="control-label"></label>
+                <input asp-for="MaximumGuests" class="form-control" />
+                <span asp-validation-for="MaximumGuests" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Bedrooms" class="control-label"></label>
+                <input asp-for="Bedrooms" class="form-control" />
+                <span asp-validation-for="Bedrooms" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Bathrooms" class="control-label"></label>
+                <input asp-for="Bathrooms" class="form-control" />
+                <span asp-validation-for="Bathrooms" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PricePerNight" class="control-label"></label>
+                <input asp-for="PricePerNight" class="form-control" />
+                <span asp-validation-for="PricePerNight" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Bookings" class="control-label"></label>
+                <input asp-for="Bookings" class="form-control" />
+                <span asp-validation-for="Bookings" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Availabilities" class="control-label"></label>
+                <input asp-for="Availabilities" class="form-control" />
+                <span asp-validation-for="Availabilities" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PropertyAmenities" class="control-label"></label>
+                <input asp-for="PropertyAmenities" class="form-control" />
+                <span asp-validation-for="PropertyAmenities" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FinancialTransactions" class="control-label"></label>
+                <input asp-for="FinancialTransactions" class="form-control" />
+                <span asp-validation-for="FinancialTransactions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
