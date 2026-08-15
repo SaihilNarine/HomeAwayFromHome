@@ -33,3 +33,78 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* FEATURES */
+
+.features-section {
+    padding: 110px 0;
+    background: #000;
+    color: #fff;
+}
+
+    .features-section .section-label {
+        color: #aaa;
+    }
+
+    .features-section .section-heading h2 {
+        color: #fff;
+    }
+
+        .features-section .section-heading h2 span {
+            color: #aaa;
+        }
+
+    .features-section .section-heading p {
+        color: #aaa;
+    }
+
+.feature-card {
+    height: 100%;
+    padding: 40px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 20px;
+    color: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 45px rgba(255, 255, 255, 0.08);
+        border-color: #666;
+    }
+
+.feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.feature-card h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.hero-logo {
+    margin-bottom: 30px;
+}
+
+    .hero-logo img {
+        width: 180px;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+.navbar-logo {
+    height: 45px;
+    width: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
